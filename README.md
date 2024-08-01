@@ -2,23 +2,8 @@
 
 ## Introduction
 
-En tant que leader du marché des données immobilières, Yanport se distingue par ses solutions avancées pour l'estimation, l'aide à la décision et l'analyse immobilière, intégrant l'intelligence artificielle et le machine learning dans son entrepôt de données exhaustif. 
-Ce projet explore des méthodologies innovantes pour détecter et classifier les images générées ou modifiées par IA, crucial pour maintenir l'intégrité des analyses visuelles immobilières. 
+Ce projet explore des méthodologies innovantes pour détecter et classifier les images générées ou modifiées par IA, crucial pour maintenir l'intégrité des analyses visuelles. 
 Nous présentons ici une vue d'ensemble de nos approches, des données utilisées, ainsi que les performances des solutions expérimentées.
-
-## Le jeu de données
-
-Pour constituer le jeu de données, j'ai utilisé les images de la base de données Yanport, en filtrant les biens immobiliers selon des critères spécifiques. J'ai sélectionné les annonces "neuves" pour les images potentiellement artificielles, et les annonces "non neuves" en location pour les images réelles. 
-Après un tri manuel pour exclure les images non pertinentes, j'ai obtenu une base de données équilibrée d'environ 3000 images (1500 par classe), essentiel pour garantir la qualité des analyses réalisées.
-
-Pour extraire le jeu de données de l'archive, exécutez la commande suivante :
-```bash
-unzip yanport_dataset.zip -d ./
-```
-
-Dans ce répertoire, vous trouverez les images dans les dossiers `FAKE` et `REAL` qui contiennent respectivement les images artificielles et réelles.
-Les dossiers 'ELA_FAKE' et 'ELA_REAL' contiennent les images ELA correspondantes.
-Les fichiers `df.csv`, `df_all_features.csv` et `features_ResNet.csv` contiennent les informations et les features extraites sur les images artificielles et réelles.
 
 ## Analyse des différences entre images réelles et artificielles
 
